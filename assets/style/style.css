@@ -1,0 +1,919 @@
+header.tasks {
+	background: #00AAAA;
+	box-shadow: none;
+	border: none;
+	border-radius: 15px;
+	padding: 8px;
+	margin: 5px;
+}
+	header.tasks div#logo, header.tasks div#logo a {
+		text-align: left;
+		font-family: uJack1;
+		color: white;
+		text-decoration: none !important;
+	}
+	 
+		header.tasks div#logo a:hover {
+			color: green;
+		}
+		
+form h1 {
+	background: #00AAFF;
+	border-radius: 10px;
+	width: 50%;
+	text-align: center;
+	margin: 0 25% 50px 25%;
+	opacity: .7;
+	font-family: tahoma, verdana;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	cursor: arrow;
+}
+
+form p {
+	margin: 5px;
+	padding: 5px;
+	font-family: tahoma, verdana;
+}
+
+div#notifierx {
+	background: red;
+	border-radius: 10px;
+	padding: 10px;
+	display: inline-block;
+	float: right;
+}
+	
+div#changes_saved {
+	position: fixed;
+	z-index: 2000;
+	font-size: 16px; 
+	font-family: tahoma, verdana;
+	white-space: nowrap;
+	background: rgb(230,240,163); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(230,240,163,1) 0%, rgba(210,230,56,1) 50%, rgba(195,216,37,1) 51%, rgba(219,240,67,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,240,163,1)), color-stop(50%,rgba(210,230,56,1)), color-stop(51%,rgba(195,216,37,1)), color-stop(100%,rgba(219,240,67,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0 0 25px #000;
+	border-radius: 15px;
+	top: 5%;
+	opacity: 0;
+	min-width: 100px;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	transition: opacity 1s;
+	left: 50%;
+	width: 10%;
+ 	margin-left: -5%;
+	padding: 15px;
+	height: 25px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	border: 1px solid #0F0;
+}
+	
+		
+/**
+	*-----------------------------------------------------------
+	* List Top 
+	*-----------------------------------------------------------
+*/
+
+/* ----- div#list-top ----- */
+div#list-top {
+	/* Padding & Margin */
+	margin: 10px 10px 0 10px;
+	padding: 10px;
+	
+	/* Borders */
+	border-radius: 5px;
+	
+	/* Background & Colors */
+	background: #e4f5fc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4f5fc), color-stop(50%,#bfe8f9), color-stop(51%,#9fd8ef), color-stop(100%,#2ab0ed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 ); /* IE6-9 */
+	
+	/* Display */
+	height: 150px;
+	box-shadow: 2px 2px 5px #CCC;
+}
+/***************************************** PUBLIC STYLES ***************************************************************/
+	/* ----- div#list-top >> h1 ----- */
+	div#list-top h1 {
+		/* Padding & Margin */
+		margin: 20px;
+		padding: 0;
+		padding-left: 20px;
+		
+		/* Border */
+		border: 2px dashed transparent;
+		
+		/* Font */
+		font-family: tahoma, verdana;
+		
+		/*font-weight: bold;*/
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		
+		/* Display */
+		float: left; 
+		display: block;
+		width: 58%;
+	} 
+	/* ----- end div#list-top >> h1 ----- */
+
+	/* ----- div#list-top p#info ----- */
+	div#list-top p#info {	
+		/* Padding & Margin */
+		margin: 15px; 
+		
+		/* Font */
+		font-family: tahoma, verdana;
+		
+		/* Display */
+		float: left;
+		display: block;
+		clear: left;
+	}
+	/* ----- end div#list-top >> p#info ----- */
+
+	/* ----- div#list-top >> p.description ----- */
+	div#list-top p.description {
+		/* Padding & Margin */
+		padding: 0;
+		padding-left: 20px;
+		padding-top: 10px;
+		margin: 0;
+		
+		/* Borders */
+		border: 2px dashed transparent;
+		
+		/* Background & Colors */
+		background: none;
+		color: black;
+		
+		/* Font */
+		font-family: tahoma, verdana;
+		font-size: 14px;
+		line-height: 30px;
+		
+		/* Display */
+		height: 145px;
+		width: 28%;
+		overflow: auto;
+		float: right;
+		display: block;
+		vertical-align: top;
+	}
+	/* ----- end div#list-top >> p.description ----- */
+	
+/***************************************** EDITING STYLES ***************************************************************/
+	/* ----- div#list-top >> input#title ----- */
+	div#list-top input#title { 
+	/*** THIS REPLACES THE H1 ***/
+		/* Padding & Margin */
+		margin: 5px;
+		padding: 0;
+		padding-left: 20px;
+		
+		/* Borders */
+		border: 2px dashed transparent;
+		
+		/* Background & Colors */
+		color: black;
+		background: none;  
+		
+		/* Font */
+		font-family: tahoma, verdana;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		
+		/* Display */
+		float: left;
+		display: block;
+		width: 58%;
+		height: 50%;	
+		-webkit-transition: border 1s, background 1s;
+		-moz-transition: border 1s, background 1s;
+		transition: border 1s, background 1s;		
+	}
+	/* ----- end div#list-top >> input#title ----- */
+
+	/* ----- div#list-top >> input#description ----- */
+	div#list-top #description {
+	/*** This replaces the p.description ***/
+		/* Padding & Margin */
+		padding: 0;
+		padding-left: 20px;
+		padding-top: 10px;
+		margin: 0;
+		
+		/* Borders */
+		border: 2px dashed transparent;
+		
+		/* Background & Colors */
+		background: none;
+		color: black;
+		
+		/* Font */
+		font-family: tahoma, verdana;
+		font-size: 14px;
+		line-height: 30px;
+		
+		/* Display */
+		height: 145px;
+		width: 28%;
+		overflow: auto;
+		float: right;
+		display: block;
+		vertical-align: top;
+		resize: none;
+		-webkit-transition: border 1s, background 1s;
+		-moz-transition: border 1s, background 1s;
+		transition: border 1s, background 1s;
+	}
+	/* ----- end div#list-top >> input#description ----- */
+
+	/* INPUT FIXES */
+	div#list-top input#title:hover, div#list-top input#title:focus, div#list-top textarea#description:hover, div#list-top textarea#description:focus {
+		border: 2px dashed #222;
+		outline: none;
+	}
+/* ----- end div#list-top ----- */
+
+/***************
+	*-----------------------------------------------------------
+	* List Bottom 
+	*-----------------------------------------------------------
+***************/
+
+/* ----- div#list-bottom ----- */ 
+div#list-bottom {
+	/* Font */
+	text-align: center;
+}	
+	/****** MENU BUTTONS *******/
+	
+	/* ----- div#list-bottom >> div#buttons ----- */
+	div#list-bottom div#buttons {
+		
+		/* Font */
+		text-align: center;
+		
+		/* Display */
+		display: inline-block;
+		white-space: no-wrap;
+	}
+		/* ----- div#list-bottom >> div#buttons ----- */
+		div#list-bottom div#buttons div.button, div.button{
+			/* Display */
+			display: inline-block;
+		}
+			/* ----- div#list-bottom >> div#buttons >> a.button ----- */
+			div#list-bottom div#buttons a.button, a.button {
+				/* Padding & Margin */
+				padding: 5px;
+				margin: 5px;
+				
+				/* Border */
+				border-radius: 25px;
+				
+				/* Background & Colors */
+				background: #e2e2e2; /* Old browsers */
+				background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+				
+				/* Font */
+				text-align: center;
+				vertical-align: middle;
+				
+				/* Display */
+				height: 64px;
+				width: 64px;
+				display: inline-block;
+			}
+				/* ----- div#list-bottom >> div#buttons >> a.button >> img ----- */
+				div#list-bottom div#buttons a.button img, a.button img {
+					/* Display */
+					opacity: .7;
+					height: 64px;
+					width: 64px;
+				}
+					/* ----- div#list-bottom >> div#buttons >> a.button >> img >> :hover ----- */
+					div#list-bottom div#buttons a.button img:hover, a.button img:hover{
+						/* Display */
+						opacity: 1;
+						cursor: pointer;
+					}
+					/* ----- end div#list-bottom >> div#buttons >> a.button >> img >> :hover ----- */
+				
+				/* ----- end div#list-bottom >> div#buttons >> a.button >> img ----- */
+				
+			/* ----- end div#list-bottom >> div#buttons >> a.button ----- */
+			
+			/* ----- div#list-bottom >> div#buttons >> div.arrow-left ----- */
+			div#list-bottom div#buttons div.arrow-left, div.arrow-left{
+				/* Padding & Margin */
+				margin: 0 -5px 0 0;
+				
+				/* Borders */
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent; 
+				border-right: 10px solid black; 
+				
+				/* Display */
+				width: 0; 
+				height: 0; 
+				display: inline-block;
+				vertical-align: middle;
+				visibility: hidden;
+				opacity: 1;
+				/*-webkit-transition: opacity 1s !important;
+				-moz-transition: opacity 1s;
+				transition: opacity 1s;*/
+			}
+			/* ----- end div#list-bottom >> div#buttons >> div.arrow-left ----- */
+			
+			/* ----- div#list-bottom >> div#buttons >> div.tooltip ----- */
+			div#list-bottom div#buttons div.tooltip, div.tooltip {
+				/* Padding & Margin */
+				padding: 5px;
+				margin: 0;
+				
+				/* Borders */
+				border-radius: 5px 10px 10px 5px;
+				
+				/* Background & Colors */
+				background: black;
+				color: white;
+				
+				/* Font */
+				font-size: 12px;
+				
+				/* Display */
+				display: inline-block;				
+				vertical-align: middle;				
+				visibility: hidden;
+				width: 40% !important;
+				opacity: 1;
+				/*-webkit-transition: opacity 1s !important;
+				-moz-transition: opacity 1s;
+				transition: opacity 1s;*/
+			}
+			/* ----- end div#list-bottom >> div#buttons >> div.tooltip ----- */
+			
+		/* ----- end div#list-bottom >> div#buttons ----- */
+		
+	/* ----- div#list-bottom >> div.newtask ----- */
+	div#list-bottom div.newtask {
+		/* Borders */
+		border-radius: 25px;
+		border: 3px solid #FFB00F;
+		
+		/* Background & Colors */
+		background: yellow;
+		
+		/* display */
+		box-shadow: 0 0 25px #CCC;
+		-webkit-transition: opacity 1s;
+		-moz-transition: opacity 1s;
+		transition: opacity 1s;
+	}
+	/* ------ end div#list-bottom >> div.newtask ----- */
+	
+	/* ----- div#list-bottom >> div.task ----- */
+	div#list-bottom div.task {
+		/* Padding & Margin */
+		margin: 10px;
+		padding: 20px;
+		
+		/* Borders */
+		border-radius: 10px;
+		
+		/* Background & Colors */
+		background: #CCC;
+		
+		/* Font */
+		text-align: left;
+		-webkit-transition: opacity 1s, height 1s;
+		-moz-transition: opacity 1s, height 1s;
+		transition: opacity 1s, height 1s;
+	}		
+		/* ----- div#list-bottom >> div.task >> input[type="checkbox"] ----- */
+		div#list-bottom div.task input[type="checkbox"] {
+			/* Background & Colors */
+			background: #FFFFFF;
+			
+			/* Display */
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			width: 50px ;
+			height: 50px;
+			vertical-align: middle;
+		}
+			/* ----- div#list-bottom >> div.task >> input[type="checkbox"] >> :hover ----- */
+			div#list-bottom div.task input[type="checkbox"]:hover {
+				/* Background & Colors */
+				background-image: url(http://tasks.eternityinc-official.com/assets/images/check.png);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			/* ----- end div#list-bottom >> div.task input[type="checkbox"] >> :hover ----- */
+
+			/* ----- div#list-bottom >> div.task >> input[type="checkbox"] >> :checked ----- */
+			div#list-bottom div.task input[type="checkbox"]:checked {
+				/* Background & Colors */
+				background-color: #00FFFF;
+				background-image: url(http://tasks.eternityinc-official.com/assets/images/check.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				
+				box-shadow: 0 0 10px #000;
+			}
+			/* ----- end div#list-bottom >> div.task >> input[type="checkbox"] >> :checked ----- */
+		
+		/* ----- end div#list-bottom >> div.task >> input[type="checkbox"] ----- */
+		
+		/* ----- div#list-bottom >> div.task >> input[type="text"] ----- */
+		div#list-bottom div.task input[type="text"] {
+			/* Padding & Margin */
+			padding: 2px;
+			
+			/* Borders */
+			border: 2px dashed transparent;
+			
+			/* Background & Colors */
+			background: none;
+			color: black;
+			
+			/* Font */ 
+			font-family: tahoma, verdana;
+			font-size: 20px;
+			
+			/* Display */
+			height: 90%;
+			display: block;
+			-webkit-transition: border 1s, background 1s;
+			-moz-transition: border 1s, background 1s;
+			transition: border 1s, background 1s;
+			width: 200%;
+		}
+			/* ----- div#list-bottom >> div.task >> input[type="text"] >> :focus, :hover ----- */
+			div#list-bottom div.task input[type="text"]:focus, div#list-bottom div.task input[type="text"]:hover {
+				/* Borders */
+				border: 2px dashed #222;
+				outline: none;
+			}
+			/* ----- end div#list-bottom >> div.task >> input[type="text"] >> :focus, :hover ----- */
+			
+		/* ----- end div#list-bottom >> div.task >> input[type="text"] ----- */
+		
+		/* ----- div#list-bottom >> div.task >> span.name ----- */
+		div#list-bottom div.task span.name {
+			/* Padding & Margin */
+			margin: 0 10px 0 10px;
+			
+			/* Font */
+			font-size: 20px;
+			font-family: tahoma, verdana;
+			
+			/* Display */
+			display: inline-block;		
+		}
+		/* ----- end div#list-bottom >> div.task >> span.name ----- */
+		
+		/* ----- div#list-bottom >> div.task >> div.links ----- */
+		div.task div.links {
+			/* Display */
+			float: right;
+			display: inline;
+		}
+			/* ----- div#list-bottom >> div.task >> div.links >> a.icon ----- */
+			div#list-bottom div.task div.links a.icon {
+				/* Padding & Margin */
+				padding: 5px;
+				margin: 5px;
+				
+				/* Borders */
+				border-radius: 10px;
+				border: 1px solid #222;
+				
+				/* Background & colors */
+				background: #EEE;
+				
+				/* Display */
+				vertical-align: top;
+				display: inline-block;
+				height: 32px;
+				width: 32px;
+				box-shadow: 0 0 10px #000;
+			}
+				/* ----- div#list-bottom >> div.task >> div.links >> a.icon >> :hover ----- */
+				div#list-bottom div.task div.links a.icon:hover {
+					/* Background & Colors */
+					background: #CCC;
+					
+					/* Display */
+					box-shadow: 5px 5px 10px #000;
+				}
+				/* ----- end div#list-bottom >> div.task >> div.links >> a.icon >> :hover ----- */
+				
+				/* ----- div#list-bottom >> div.task >> div.links >> a.icon >> :active ----- */
+				div#list-bottom div.task div.links a.icon:active {
+					/* Display */
+					box-shadow: inset 5px 5px 10px #000;
+				}
+				/* ----- end div#list-bottom >> div.task >> div.links >> a.icon >> :active ----- */
+				
+			/* ----- end div#list-bottom >> div.task >> div.links >> a.icon ----- */
+			
+		/* ----- end div#list-bottom >> div.task >> div.links ----- */
+		
+		/* ----- div#list-bottom >> div.task >> div.details ----- */
+		div#list-bottom div.task div.details {
+			/* Padding & Margin */
+			margin: 10px;
+			padding: 10px;
+			 
+			/* Background & Colors */
+			background: #EEE !important;
+			clear: both;
+		}
+			
+			/* ----- div#list-bottom >> div.task >> div.details >> a ----- */
+			div#list-bottom div.task div.details a {
+				/* Display */
+				float: right;
+				vertical-align: top;
+			}
+			/* ----- end div#list-bottom >> div.task >> div.details >> a ----- */
+			
+		/* ----- end div#list-bottom >> div.task >> div.details ----- */
+		
+	/* ----- end div#list-bottom >> div.task ----- */
+	
+/* ----- end div#list-bottom ----- */
+
+/* ----- div.overlay ------ */
+div.overlay {
+	/* Padding & Margin */
+	padding: 5px;
+	
+	/* Borders */
+	border: 3px solid #00FFFF;
+	border-radius: 25px;
+	
+	/* Background & colors */
+	background: #00AAFF;
+	color: white;
+	
+	/* Font */
+	text-align: center;
+	
+	/* Display */
+	display: none;
+	z-index: 1002;
+	top: 25%;
+	left: 25%;
+	right: 25%;
+	width: 50%;
+	position: fixed;
+	box-shadow: 0 0 15px #000;
+}
+	/* ----- div.overlay >> a ----- */
+	div.overlay a {
+		/* Padding & Margin */
+		padding: 2%;
+		
+		/* Borders */
+		border: 3px solid #00FFFF;
+		border-radius: 50px;
+		
+		/* Background & Colors */
+		background: #AAAAFF;
+		color: white;
+		
+		/* Font */
+		text-decoration: none;
+		font-weight: bold;
+		
+		/* Display */
+		float: right;
+		width: 30px;
+	}
+		/* ----- div.overlay >> a >> :hover ----- */
+		div.overlay a:hover {
+			/* Background & Colors */
+			background: #AAAA88;
+		}
+		/* ----- end div.overlay >> a >> :hover ----- */
+		
+	/* ----- end div.overlay >> a ----- */
+
+	/* ----- div.overlay >> form >> table ----- */
+	div.overlay form table, div.overlay form table tr, div.overlay form table td {
+		/* Borders */
+		border: none;
+		
+		/* Background & Colors */
+		background: none;
+	}
+	/* ----- end div.overlay >> form >> table ----- */
+	
+	/* ----- div.overlay >> form >> textarea ----- */
+	div.overlay form textarea {
+		/* Display */
+		height: 70px !important;
+		width: 300px !important;
+		vertical-align: top;
+	}
+	/* ----- end div.overlay >> form >> textarea ----- */
+
+/* ----- div.backdrop ----- */
+div#backdrop {
+	/* Background & Colors */
+	background: black;
+	
+	/* Display */
+	width: 100%;
+	height: 100%;
+	opacity: .8;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: none;
+	z-index: 1000;
+}
+/* ----- end div.backdrop ----- */
+
+h3.unactive {
+	background: #CCC !important;
+	cursor: pointer !important;
+}
+
+h3.unactive:hover {
+	background: #AAA !important;
+}
+
+button.add {
+	background: #b4ddb4; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#b4ddb4), color-stop(17%,#83c783), color-stop(33%,#52b152), color-stop(67%,#008a00), color-stop(83%,#005700), color-stop(100%,#002400)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	vertical-align: middle;
+	border: none;
+	border-radius: 15px;
+	padding: 15px;
+	width: 30%;
+	margin: 5%;
+	font-family: ujack1;
+	color: blue;
+	height: 100px;
+	box-shadow: 0 0 25px #000;
+	opacity: .8;
+}
+
+button.add:hover {
+cursor: pointer;
+	
+	background: #002400; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #002400 0%, #005700 17%, #008a00 33%, #52b152 67%, #83c783 83%, #b4ddb4 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#002400), color-stop(17%,#005700), color-stop(33%,#008a00), color-stop(67%,#52b152), color-stop(83%,#83c783), color-stop(100%,#b4ddb4)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #002400 0%,#005700 17%,#008a00 33%,#52b152 67%,#83c783 83%,#b4ddb4 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #002400 0%,#005700 17%,#008a00 33%,#52b152 67%,#83c783 83%,#b4ddb4 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #002400 0%,#005700 17%,#008a00 33%,#52b152 67%,#83c783 83%,#b4ddb4 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #002400 0%,#005700 17%,#008a00 33%,#52b152 67%,#83c783 83%,#b4ddb4 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002400', endColorstr='#b4ddb4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+button.add:active {
+	box-shadow: inset 5px 5px 25px #000;
+}
+
+
+div#prompt {
+	background: #00ee88;
+	z-index: 9999 !important;
+	padding: 2%;
+	position: fixed;
+	top: 40%;
+	bottom: 40%;
+	right: 25%;
+	left: 25%;
+	text-align: center;
+	display: none;
+	vertical-align: middle;
+}
+
+
+div.latest-activity {
+	background: #CAC6CA;
+	padding: 10px;
+	opacity: .93;
+	border: 1px solid #000;
+	border-radius: 15px;
+	display: inline-block;
+	width: 50%;
+	height: 200px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+div.latest-activity h3 {
+	text-align: center;
+	border-bottom: 3px solid #000;
+	margin-bottom: 5px;
+}
+
+div.latest-activity div.la-row {
+	margin: 10px;
+	padding: 5px;
+	border-bottom: 2px solid #000;
+	-webkit-transition: background .4s;
+	-moz-transition: background .4s;
+	transition: background .4s;
+}
+
+div.latest-activity div#activity-area {
+	overflow-y: scroll;
+	height: 150px;
+}
+
+div.latest-activity div.la-row:hover {
+	background: white;
+}
+ 
+Div.lists {
+Margin: 20px;
+}
+
+.saved {
+	background: yellow !important;
+}
+
+div.list {
+background: #008CFF;
+Padding: 10px;
+Border: 1px solid #1C1C1C;
+Border-radius: 15px;
+}
+
+div.yl-row {
+	padding: 10px;
+	-webkit-transition: background 2s;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-family: tahoma, verdana;
+}
+div.yl-row:hover {
+	background: #00AAFF;
+}
+div.yl-row a {
+	font-size: 18px;
+	font-family: tahoma, verdana;
+	color: white;
+}
+
+
+
+
+
+H3.tab{
+Background:#008CFF;
+Border: 1px solid #000;
+border-bottom: none;
+border-radius: 15px 15px 0 0;
+Display:inline-block;
+Margin: 0;
+margin-left: 2%;
+margin-bottom: -1px;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+padding: 10px;
+cursor: default;
+width: 15%;
+text-align: center;
+}
+
+div.admin-capabilities {
+	position: fixed;
+	bottom: 0;
+	left: 5px;
+	width: 30%;
+	background: red;
+	padding: 5px;
+	border: 2px solid #4E0000;
+	border-radius: 10px 10px 0 0;
+	text-transform: uppercase;
+	font-family: tahoma;
+	font-size: 12px;
+	opacity: .8;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	cursor: default !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THIS IS THE SEARCH BAR */
+		/* ----- header.api >> nav >> ul >> li >> table ----- */
+		table.task-search {
+			/* Borders */
+			border: none !important;
+		}
+			/* ----- header.api >> nav >> ul >> li >> table >> tr ----- */
+			table.task-search tr {
+				/* Borders */
+				border: inherit;
+			}
+				/* SEARCH ICON */
+				/* ----- header.api >> nav >> ul >> li >> table >> tr >> td (first) ----- */
+				table.task-search tr td.c1 {
+					/* Borders */
+					border-radius: 25px 0 0 25px; 
+					border: inherit; 
+					
+					/* Background & Colors */
+					background: #E0E0E0 url(http://alpha.scratch.mit.edu/scratchr2/static//images/nav-search-glass.png) center no-repeat;
+					
+					/* Display */
+					width: 20px;
+				}
+				/* ----- end header.api >> nav >> ul >> li >> table >> tr >> td (first) ----- */
+				
+				/* SEARCH INPUT */
+				/* ----- header.api >> nav >> ul >> li >> table >> tr >> td (second) ----- */
+				table.task-search tr td.c2 {
+					/* Padding & Margin */
+					padding: 0;
+					
+					/* borders */
+					border-radius: 0 25px 25px 0 !important;  
+					border: none;
+				}
+					/* ----- header.api >> nav >> ul >> li >> table >> tr >> td (second) >> input ----- */
+					table.task-search tr td.c2 input {
+						/* Padding & Margin */
+						margin: 0;
+						
+						/* Borders */
+						border: 0;
+						border-radius: 0 25px 25px 0;
+						
+						/* Background & Colors */
+						background: #E0E0E0;
+						color: black;
+						
+					}
+				/* ----- end header.api >> nav >> ul >> li >> table >> tr >> td (second) ----- */
+			
+			/* ----- header.api >> nav >> ul >> li >> table >> tr ----- */
+			
+		/* ----- header.api >> nav >> ul >> li >> table ----- */
+		

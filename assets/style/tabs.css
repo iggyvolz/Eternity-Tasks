@@ -1,0 +1,320 @@
+/**************************************
+ START FEATURED ROW 
+*************************************/
+
+
+div.featured-row {
+	/* Padding & Margin */
+	padding: 10px;
+	margin: 5px;
+	
+	/* Borders */
+	border-radius: 5px;
+	border: 1px solid #0000FF;
+	
+	/* Display */
+	box-shadow: 0 0 25px #0000FF;
+	-webkit-transition: height 1s;
+	-moz-transition: height 1s;
+	transition: height 1s;
+}
+	div.featured-row div.featured-row-tasks {
+		/* Padding & Margin */
+		padding: 10px;
+		margin-right: 10px;
+		
+		/* Borders */
+		border-radius: 5px;
+		
+		/* Background & Colors */
+		background: #FDFDFD;
+		
+		/* Font */
+		text-align: center;
+		
+		/* Display */
+		display: inline-block;
+		height: 50px;
+		width: 50px;
+		vertical-align: top;
+		float: left;
+		box-shadow: -3px 3px 10px #000;
+	}
+	
+		div.featured-row div.featured-row-tasks span.number {
+			/* Font */
+			font-family: tahoma, verdana;
+			font-size: 18px;
+			
+			/* Display */
+			vertical-align: top;
+		}
+		
+		div.featured-row div.featured-row-tasks span.label {
+			/* Font */
+			font-size: 12px;
+			text-transform: uppercase;
+			
+			/* Display */
+			vertical-align: bottom;
+		}
+		
+	div.featured-row span.name a{
+		/* Background & Colors */
+		color: white;		
+		
+		/* Font */
+		font-size: 36px;
+		text-decoration: none;
+		
+		/* Display */
+		display: block;
+	}
+	
+		div.featured-row span.name a:hover {
+			/* Background & Colors */
+			color: #00AA00;
+		}
+	
+	span.author {
+		/* Display */
+		display: inline-block;
+	}
+	
+	span.description {
+		/* Padding & Margin */
+		padding: 10px;
+		margin-right: 20%;
+		
+		/* Borders */
+		border-left: 4px solid #0F0;
+		
+		/* Display */
+		vertical-align: top;
+		display: block;
+		float: right;
+		height: 50px;
+		display: none;
+		-webkit-transition: opacity 1s, display 1s;
+		-moz-transition: opacity 1s, display 1s;
+		transition: opacity 1s, display 1s;
+	}
+	
+	div.remove-from-featured {
+		/* Padding & Margin */
+		padding: 5px;
+		margin: 25px;
+		
+		/* Borders */
+		border-radius: 5px;
+		
+		/* Background & Colors */
+		background: #999;
+		
+		/* Font */
+		text-align: center;
+		-webkit-transition: opacity 1s, display 1s;
+		-moz-transition: opacity 1s, display 1s;
+		transition: opacity 1s, display 1s;
+	}
+		div.remove-from-featured a {
+			/* Background & Colors */
+			color: white;
+		}
+
+div#featured-overlay {
+	display: none;
+	z-index: 10002;
+	top: 25%;
+	bottom: 25%;
+	right: 25%;
+	left: 25%;
+	background: #0F0;
+	position: fixed;
+	text-align: center !important;
+	box-shadow: 0 0 15px #0F0;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+	div#featured-overlay a {
+		float: right;
+		background: #00AA00;
+		border: 3px solid #00FF00;
+		box-shadow: 0 0 25px #0A0;
+		border-radius: 25px;
+		padding: 10px;
+		color: white;
+	}
+
+div.add-to-featured {
+	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+	vertical-align: middle;
+	padding: 10px 0 10px 0;
+	margin: 0 40% 0 40%;
+	background: rgb(191,210,85); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(191,210,85,1) 0%, rgba(142,185,42,1) 50%, rgba(114,170,0,1) 51%, rgba(158,203,45,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(191,210,85,1)), color-stop(50%,rgba(142,185,42,1)), color-stop(51%,rgba(114,170,0,1)), color-stop(100%,rgba(158,203,45,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+
+}	
+div.add-to-featured:hover {
+background: rgb(158,203,45); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(158,203,45,1) 0%, rgba(114,170,0,1) 49%, rgba(142,185,42,1) 50%, rgba(191,210,85,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(158,203,45,1)), color-stop(49%,rgba(114,170,0,1)), color-stop(50%,rgba(142,185,42,1)), color-stop(100%,rgba(191,210,85,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(158,203,45,1) 0%,rgba(114,170,0,1) 49%,rgba(142,185,42,1) 50%,rgba(191,210,85,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(158,203,45,1) 0%,rgba(114,170,0,1) 49%,rgba(142,185,42,1) 50%,rgba(191,210,85,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(158,203,45,1) 0%,rgba(114,170,0,1) 49%,rgba(142,185,42,1) 50%,rgba(191,210,85,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(158,203,45,1) 0%,rgba(114,170,0,1) 49%,rgba(142,185,42,1) 50%,rgba(191,210,85,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ecb2d', endColorstr='#bfd255',GradientType=0 ); /* IE6-9 */
+
+}
+
+div.add-to-featured table {
+	vertical-align: middle;
+}
+div.add-to-featured table, div.add-to-featured table tr, div.add-to-featured table tr td{	
+	border: none;
+	background: none;
+	
+}
+	div.add-to-featured table tr td.c1 {
+		background: url(/assets/images/add.png) center no-repeat;
+		width: 50px;
+		padding: 5px;
+		border-right: 1px solid #000;
+	}
+	
+	div.add-to-featured table tr td button {
+		background: none;
+		border: none;
+		font-size: 14px;
+		font-family: tahoma, verdana;
+	}
+		
+/**************************************
+ END FEATURED ROW 
+*************************************/
+
+/**************************************
+ START FAVORITES ROW 
+*************************************/
+
+div.favorites-row {
+	border-radius: 5px;
+	padding: 15px;
+	margin: 5px;
+	clear: both;
+}
+	div.star {
+		/* Display */
+		display: inline-block;
+		float: left;
+	}
+		div.favorites-row div.star span.favorites-star{
+			/* Padding & Margin */
+			padding: 3px;
+			margin: 0 10px 0 5px;
+			
+			/* Borders */
+			border-width: 1px;
+			border-style: solid;
+			border-color: #020A00;
+			border-radius: 25px;
+			
+			/* Background & Colors */
+			background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -moz-linear-gradient(top,  rgba(130,130,130,1) 0%, rgba(130,130,130,0.99) 1%, rgba(76,76,76,0.4) 80%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+			background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(130,130,130,1)), color-stop(1%,rgba(130,130,130,0.99)), color-stop(80%,rgba(76,76,76,0.4)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+			background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -webkit-linear-gradient(top,  rgba(130,130,130,1) 0%,rgba(130,130,130,0.99) 1%,rgba(76,76,76,0.4) 80%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+			background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -o-linear-gradient(top,  rgba(130,130,130,1) 0%,rgba(130,130,130,0.99) 1%,rgba(76,76,76,0.4) 80%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+			background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -ms-linear-gradient(top,  rgba(130,130,130,1) 0%,rgba(130,130,130,0.99) 1%,rgba(76,76,76,0.4) 80%,rgba(255,255,255,0) 100%); /* IE10+ */
+			background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), linear-gradient(to bottom,  rgba(130,130,130,1) 0%,rgba(130,130,130,0.99) 1%,rgba(76,76,76,0.4) 80%,rgba(255,255,255,0) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828282', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+			background-repeat: no-repeat;
+			background-position: center;
+			
+			/* Display */
+			vertical-align: middle;
+			display: block;
+			height: 70px;
+			width: 70px;
+			opacity: .95;
+		}
+			div.favorites-row div.star span.favorites-star:hover {
+				/* Background & Colors */
+				background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(76,76,76,0.4) 20%, rgba(130,130,130,0.99) 99%, rgba(130,130,130,1) 100%); /* FF3.6+ */
+				background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(20%,rgba(76,76,76,0.4)), color-stop(99%,rgba(130,130,130,0.99)), color-stop(100%,rgba(130,130,130,1))); /* Chrome,Safari4+ */
+				background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(76,76,76,0.4) 20%,rgba(130,130,130,0.99) 99%,rgba(130,130,130,1) 100%); /* Chrome10+,Safari5.1+ */
+				background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(76,76,76,0.4) 20%,rgba(130,130,130,0.99) 99%,rgba(130,130,130,1) 100%); /* Opera 11.10+ */
+				background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(76,76,76,0.4) 20%,rgba(130,130,130,0.99) 99%,rgba(130,130,130,1) 100%); /* IE10+ */
+				background: url('http://tasks.eternityinc-official.com/assets/images/unfavorite.png'), linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(76,76,76,0.4) 20%,rgba(130,130,130,0.99) 99%,rgba(130,130,130,1) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#828282',GradientType=0 ); /* IE6-9 */
+				background-repeat: no-repeat;
+				background-position: center;
+			
+				/* Display */
+				opacity: 1;
+				cursor: pointer;
+			}
+		
+		div.favorites-row div.star span.favorites-number {
+			/* Padding & Margin */
+			padding: 2px;		
+			margin: 0 0 0 7px;
+			
+			/* Borders */
+			border-radius: 15px;
+			
+			/* Background & Colors */
+			background: rgb(243,226,199); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(243,226,199,1) 0%, rgba(193,158,103,1) 50%, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(243,226,199,1)), color-stop(50%,rgba(193,158,103,1)), color-stop(51%,rgba(182,141,76,1)), color-stop(100%,rgba(233,212,179,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+			
+			/* Display */
+			display: block;
+			width: 68px;
+			text-align: center;
+			opacity: .8;
+			box-shadow: 0 0 20px #000;
+		}
+		
+	div.favorites-row a.title {
+		/* Background & Colors */
+		color: white;
+		
+		/* Font */
+		vertical-align: top;
+		font-size: 28px;
+		font-family: tahoma, verdana;
+		text-decoration: none !important;
+		
+		/* Display */
+		display: block;
+	}
+		div.favorites-row a.title:hover {
+			/* Background & Colors */
+			color: #00AA00;
+		}
+	
+	div.favorites-row span.author {
+		display: inline-block;
+		text-align: left;
+		text-transform: uppercase;
+
+	}
+	
+/**************************************
+ END FAVORITES ROW 
+*************************************/

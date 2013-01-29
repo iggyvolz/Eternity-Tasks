@@ -1,0 +1,19 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule ^lists$ list_index.php
+RewriteRule ^lists/create$ list_create.php
+RewriteRule ^lists/view/(.*)$ list_view.php?id=$1
+RewriteRule ^lists/add/(.*)$ list_add.php?list=$1
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^code_collab$ code_index.php?$
+RewriteRule ^code-create$ code_create.php?$
+RewriteRule ^code_edit/(.*)$ code_edit.php?id=$1
+
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^projects$ project_index.php
+RewriteRule ^projects/create$ project_create.php 
+RewriteRule ^projects/(.*)$ projects_view.php?id=$1

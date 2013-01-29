@@ -1,0 +1,149 @@
+
+div#project-top {
+	background: rgb(193,191,234); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(193,191,234,1) 0%, rgba(206,199,236,1) 49%, rgba(216,208,239,1) 50%, rgba(235,233,249,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(193,191,234,1)), color-stop(49%,rgba(206,199,236,1)), color-stop(50%,rgba(216,208,239,1)), color-stop(100%,rgba(235,233,249,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(193,191,234,1) 0%,rgba(206,199,236,1) 49%,rgba(216,208,239,1) 50%,rgba(235,233,249,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(193,191,234,1) 0%,rgba(206,199,236,1) 49%,rgba(216,208,239,1) 50%,rgba(235,233,249,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(193,191,234,1) 0%,rgba(206,199,236,1) 49%,rgba(216,208,239,1) 50%,rgba(235,233,249,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(193,191,234,1) 0%,rgba(206,199,236,1) 49%,rgba(216,208,239,1) 50%,rgba(235,233,249,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1bfea', endColorstr='#ebe9f9',GradientType=0 ); /* IE6-9 */
+	
+	height: 200px;
+	padding: 10px;
+	border-radius: 15px;
+	
+}
+
+
+form input, form textarea, form select {
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	color: #666 !important;
+	font-family: tahoma, verdana;
+	border-radius: 5px;
+	border: 1px solid #111;
+	outline: none !important;
+}
+
+
+table, tr, tbody, td, th {
+	border: none !important;
+	background: none !important;
+}
+
+table, tr {
+	margin: 25px !important;
+}
+
+
+
+div.arrow {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	
+	border-right:10px solid black;
+	margin: 0;
+	display: inline-block !important;
+}
+
+div.create-tooltip {
+	background-color: #000 !important;
+	color: white;
+	font-family: tahoma, verdana;
+	font-size: 14px;
+	padding: 15px;
+	border-radius: 5px;
+	width: 50%;
+
+	display: inline-block !important;
+	margin: 0;
+	
+}
+
+td.tooltip {
+	opacity: 0;
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	transition: opacity 2s;
+}
+
+
+
+
+
+
+
+
+
+div#project-top input#title {
+	background: none;
+	border: 3px dashed transparent;
+	font-size: 36px;
+	width: 96%;
+	margin: 2%;
+	height: 50px;
+	color: black;
+	-webkit-transition: border 1s, background 1s;
+	-moz-transition: border 1s, background 1s;
+	transition: border 1s, background 1s;
+}
+
+div#project-top input#title:focus, div#project-top input#title:hover {
+	border: 3px dashed #000;
+}
+
+
+div#project-top div#tabs button {
+	background: #666;
+	color: white;
+	font-family: tahoma, verdana;
+	padding: 5px;
+	border: none !important;
+	border-radius: 10px 10px 0 0;
+	vertical-align: bottom;
+	font-size: 18px;
+	margin-left: 2%;
+	margin-bottom: -5px;
+}
+
+div#project-top div#tabs button.unactive:active {
+	box-shadow: inset 5px 4px 15px #000;
+}
+
+div#project-top div.tab {
+	background: #666;
+	border: 2px solid #777;
+	border-radius: 10px;
+	display: block;
+	margin: 0;
+	padding: 10px;	
+	height: 100px;
+}
+
+div#project-top div.tab #description {
+	background: none;
+	border: 3px dashed transparent;
+	width: 50%;
+	height: 70px;
+	padding: 5px;
+	resize: none;
+	float: right;
+	outline: none !important;
+	-webkit-transition: border 1s, background 1s;
+	-moz-transition: border 1s, background 1s;
+	transition: border 1s, background 1s;
+}
+
+div#project-top div.tab div#description:hover, div#project-top div.tab div#description:focus {
+	border: 3px dashed #000;
+}
+
