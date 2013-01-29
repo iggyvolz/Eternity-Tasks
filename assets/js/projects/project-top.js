@@ -3,11 +3,10 @@
  * 
  * @param title 	The new title of the project
  * @param id		the id of the project
- * @author XenoK Xihelien
- * @copyright 2012 Eternity Incurakai
+ * @author 		XenoK Xihelien
+ * @copyright 		2012 Eternity Incurakai
  */
 function projects_updatetitle(title, id) {
-	
 	
 	// we're checking if the notification function is running.  If this runs while the notification function is
 	// checking,  we might get some errors, so DONT REMOVE THIS IF STATEMENT EITHER.
@@ -26,9 +25,9 @@ function projects_updatetitle(title, id) {
 		req.open("POST", "/projects/"+id, true);
 		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
 		req.send("type=projects_updatetitle&title=" + encodeURIComponent(title));
-	
+		
+		// more AJAX Stuff...
 		req.onreadystatechange = function() {
-			
 			if (req.readyState==4 && req.status==200) {
 				// set variables 
 				var title = document.getElementById('title');
@@ -49,7 +48,7 @@ function projects_updatetitle(title, id) {
 				delay = false;
 				titledelay = false;
 			} 
-			else {
+			else { // here we have an error
 				// set variables
 				var title = document.getElementById('title');			
 				var notifier = document.getElementById('changes_saved');
@@ -62,7 +61,7 @@ function projects_updatetitle(title, id) {
 				delay = false;
 				titledelay = false;
 			}
-	}  
+		}  
 	}
 }
 
