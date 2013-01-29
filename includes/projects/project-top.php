@@ -9,15 +9,15 @@ if($_POST['type'] == "projects_tab") { projects_tab($_POST['tabtype'], $db); }
  * This function updates the project title within the project viewing page (project_view.php) used as a function to communicate with AJAX.
  * 
  * @param $title 	The new title of the project
- * @author XenoK Xihelien
- * @copyright 2012 Eternity Incurakai
+ * @author 		XenoK Xihelien
+ * @copyright 		2012 Eternity Incurakai
  * 
  */
 function projects_updatetitle($title) {
 	
 	/* Check for accurate username */
 	if($GLOBALS['creator'] != $_SESSION['username']) {
-		die;
+		die; // prevent from further execution DONT REMOVE
 	}
 	
 	/* mark globals to use, set variables */
@@ -30,7 +30,7 @@ function projects_updatetitle($title) {
 
 	/* Check the title value for inefficiency, must be 3 characters in length. */
 	if(!isset($title) || $title_length < 3) {
-		echo $length_error;
+		echo $length_error; // Must be at least 3 characters in length
 		die;
 	}
 	
