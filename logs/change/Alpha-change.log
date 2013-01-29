@@ -1,0 +1,58 @@
+WELCOME TO ETERNITY TASKS CHANGELOG FOR THE VERSION 3 ALPHA STAGE!  PLEASE USE THE CONVENTION BELOW FOR ALL CHANGES.
+
+MM-DD-YYYY HH:MM AM/PM TIMEZONE	| USER	| type	| file		// comments
+
+01/01/2013
+***************************************************************************************************************************
+01/01/2013 09:07 AM GMT -6	| XenoK	| created	| logs/change/Alpha-change.log		// initial commit, created other directories too.
+01/01/2013 09:10 AM GMT -6	| XenoK	| created	| assets							// initial commit
+01/01/2013 09:10 AM GMT -6	| XenoK	| created	| assets/style						// initial commit
+01/01/2013 09:11 AM GMT -6	| XenoK	| created	| assets/style/style.css			// initial commit
+01/01/2013 09:12 AM GMT -6	| XenoK	| created	| logs/errors						// initial commit
+01/01/2013 09:12 AM GMT -6	| XenoK	| created	| logs/release						// initial commit
+01/01/2013 09:13 AM GMT -6	| XenoK	| created	| errors							// initial commit
+01/01/2013 09:13 AM GMT -6	| XenoK	| created	| includes							// initial commit
+// ADDED ALL REQUIRED DIRECTORIES ACCORDING TO THE NEW PRE-ALPHA STAGE SPECIFICATIONS
+
+01/01/2013 09:30 AM GMT -6	| XenoK	| created	| includes/eternityx				// initial commit
+01/01/2013 09:31 AM GMT -6	| XenoK	| created	| includes/eternityx/php.php		// initial commit
+01/01/2013 09:47 AM GMT -6	| XenoK	| edited	| includes/eternityx				// added all eternityx files
+01/01/2013 09:51 AM GMT -6	| XenoK	| created	| includes/interface				// initial commit
+01/01/2013 09:51 AM GMT -6	| XenoK	| created	| includes/interface/header.php		// initial commit
+01/01/2013 10:06 AM GMT -6	| XenoK	| created	| list_create.php					// initial commit
+01/01/2013 10:27 AM GMT -6	| XenoK	| created	| list_index.php					// initial commit
+01/01/2013 10:28 AM GMT -6	| XenoK	| created	| .htaccess							// initial commit
+01/01/2013 10:35 AM GMT -6	| XenoK	| created	| list_view.php						// edited .htaccess as well
+
+01/08/2013
+***************************************************************************************************************************
+01/08/2013 11:44 AM GMT -6	| XenoK	| edited	| list_view.php && assets/style/style.css		// prepared a complete listing function.
+
+
+01/13/2013
+***************************************************************************************************************************
+01/13/2013 07:29 PM GMT -6	| XenoK	| edited	| list_view.php && assets/style/style.css  		// several unlogged changes, such as the addition of several include files, and others, but finished the lists viewing page for the most page.
+
+
+
+1/15/2013
+_____________________
+XenoK - added featured.php to the includes directory
+XenoK - added featured.js to the assets/js directory 
+XenoK - added tabs.css to the assets/style directory
+XenoK - edited lists_index.php for completion of the featured tab. // still have some styling wok to do
+
+1/21/2013
+_____________________
+XenoK - added favorites.js to the assets/js/tabs directory
+XenoK - added favorites.php to the includes/tabs directory
+XenoK - edited tabs.css to the assets/style directory
+XenoK - edited lists_index.php for completion of the favorites tab. // still have a lot more styling to do
+XenoK - added some javascript files and a directory, cleaned up list index and view
+XenoK - added a lists directory to includes, and added some files that are now included in the list view and index
+
+
+
+
+
+
