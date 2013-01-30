@@ -14,6 +14,7 @@ function projects_updatetitle(title, id) {
 		// we're telling the notification function not to run, otherwise we are going to get some messed up errors.  
 		// DO NOT REMOVE THE FOLLOWING LINE!!
 		delay = true;
+		descriptiondelay = true;
 		if (window.XMLHttpRequest) {
 			req = new XMLHttpRequest();
 		} 
@@ -46,7 +47,7 @@ function projects_updatetitle(title, id) {
 				var save = 'title.style.background = "none"; document.getElementById("changes_saved").style.opacity = "0"';
 				setTimeout(save, 2000);
 				delay = false;
-				titledelay = false;
+				descriptiondelay = false;
 			} 
 			else { // here we have an error
 				// set variables
@@ -59,34 +60,49 @@ function projects_updatetitle(title, id) {
 				var save = 'document.getElementById("changes_saved").style.opacity = "0"';
 				setTimeout(save, 2000);
 				delay = false;
-				titledelay = false;
+				descriptiondelay = false;
 			}
 		}  
 	}
 }
 
 
-
+/**
+ * This function updates the project description within the project viewing page (project_view.php) used as a function to communicate with PHP.
+ * 
+ * @param description 	The new description of the project
+ * @param id		the id of the project
+ * @author 		XenoK Xihelien
+ * @copyright 		2012 Eternity Incurakai
+ */
 function projects_updatedescription(description, id) {
-	if (window.XMLHttpRequest) {
-		req = new XMLHttpRequest();
-	} 
-	else {
-		req = new ActiveXObject("Microsoft.XMLHTTP");
-	}
-	
-	req.open("POST", "/projects/"+id, true);
-	req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-	req.send("type=projects_updatedescription&description=" + encodeURIComponent(description));
-
-	req.onreadystatechange = function() {
-		if (req.readyState==4 && req.status==200) {
-			document.getElementById('description').innerHTML = '<strong contenteditable="false">Description:</strong>'+req.responseText;
-			document.getElementById('description').style.background = "yellow";
-			var save = 'document.getElementById("description").style.background = "none"';
-			setInterval(save, 10000);
+	if(descriptiondelay == false) {
+		delay = true;
+		titledelay = true;
+		if (window.XMLHttpRequest) {
+			req = new XMLHttpRequest();
 		} 
 		else {
+			req = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		
+		req.open("POST", "/projects/"+id, true);
+		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+		req.send("type=projects_updatedescription&description=" + encodeURIComponent(description));
+	
+		req.onreadystatechange = function() {
+			if (req.readyState==4 && req.status==200) {
+				document.getElementById('description').innerHTML = '<strong contenteditable="false">Description:</strong>'+req.responseText;
+				document.getElementById('description').style.background = "yellow";
+				var save = 'document.getElementById("description").style.background = "none"';
+				setInterval(save, 10000);
+				delay = false;
+				titledelay = false;
+			} 
+			else {
+				delay = false;
+				titledelay = false;
+			}
 		}
 	}
 }
