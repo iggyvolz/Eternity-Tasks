@@ -29,32 +29,34 @@
 		
 		if(delay == false) {
 			titledelay = true;
-		if (window.XMLHttpRequest) {
-			req = new XMLHttpRequest();
-		} 
-		else {
-			req = new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		
-		req.open("POST", "/", true);
-		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-		req.send("function=yes");
- 
-		req.onreadystatechange = function() {
-			if (req.readyState==4 && req.status==200) {
-				titledelay = false;
-				document.getElementById('notifierx').innerHTML = req.responseText + " notifications";
-				
+			descriptiondelay = true;
+			if (window.XMLHttpRequest) {
+				req = new XMLHttpRequest();
 			} 
 			else {
-           		titledelay = false;
+				req = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			
+			req.open("POST", "/", true);
+			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+			req.send("function=yes");
+	 
+			req.onreadystatechange = function() {
+				if (req.readyState==4 && req.status==200) {
+					document.getElementById('notifierx').innerHTML = req.responseText + " notifications";
+					titledelay = false;
+					descriptiondelay = false;
+				} 
+				else {
+	           			titledelay = false;
+	           			descriptiondelay = false;
+				}
 			}
 		}
-		titledelay = false;
-	}
 	}
 	var delay = false;
 	var titledelay = false;
+	var descriptiondelay = false;
 	setInterval(function() { invitescheck(); }, 1000);
 	
 </script>
